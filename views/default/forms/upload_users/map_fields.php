@@ -36,7 +36,7 @@ if (elgg_is_active_plugin('profile_manager')) {
 			$option = $field->getTitle();
 			if ($category_guid = $field->category_guid) {
 				$category = get_entity($category_guid);
-				$option = "$option ({$category->getTitle()})";
+				$option = "$option ($category->getTitle())";
 			}
 			$mapping_options[$field->metadata_name] = $option;
 		}
